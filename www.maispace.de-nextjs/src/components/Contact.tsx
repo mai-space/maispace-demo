@@ -21,7 +21,7 @@ export default function Contact() {
               uns reden.
             </h2>
             <p className="font-sans text-base text-stone leading-relaxed max-w-sm">
-              Haben Sie ein Projekt im Kopf? Wir freuen uns auf Ihre Nachricht und melden uns innerhalb von 24 Stunden.
+              Haben Sie ein Projekt im Kopf oder eine Frage zur Beratung? Ich freue mich auf Ihre Nachricht und melde mich innerhalb von 24 Stunden.
             </p>
 
             <div className="mt-10 space-y-3">

@@ -21,12 +21,12 @@ const dmMono = DM_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Maispace — Ihr technischer Berater',
-  description: 'Wir entwickeln moderne, skalierbare Webanwendungen und digitale Infrastrukturen für anspruchsvolle Unternehmen.',
+  title: 'Maispace — Webentwicklung & Beratung',
+  description: 'Individuelle Weblösungen mit TYPO3, Laravel und Next.js. Beratung zu UI/UX und Software-Architektur.',
   metadataBase: new URL('https://maispace.de'),
   openGraph: {
-    title: 'Maispace — Ihr technischer Berater',
-    description: 'Wir entwickeln moderne, skalierbare Webanwendungen und digitale Infrastrukturen für anspruchsvolle Unternehmen.',
+    title: 'Maispace — Webentwicklung & Beratung',
+    description: 'Individuelle Weblösungen mit TYPO3, Laravel und Next.js. Beratung zu UI/UX und Software-Architektur.',
     url: 'https://maispace.de',
     siteName: 'Maispace',
     locale: 'de_DE',
