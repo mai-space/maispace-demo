@@ -18,19 +18,19 @@ export default function Hero() {
         {/* Main headline */}
         <div className="md:col-span-8">
           <p className="font-mono text-xs tracking-widest2 text-stone uppercase mb-6 animate-fade-up delay-100">
-            Ihr technischer Berater
+            Freiberuflicher Entwickler &amp; Berater
           </p>
           <h1 className="font-display text-5xl md:text-7xl lg:text-8xl leading-[1.05] text-ink animate-fade-up delay-200">
-            Wir bauen<br />
-            digitale<br />
-            <span className="italic text-stone">Infrastruktur.</span>
+            Maßge&shy;schneiderte<br />
+            Web&shy;lösungen,<br />
+            <span className="italic text-stone">die funktionieren.</span>
           </h1>
         </div>
 
         {/* Side descriptor */}
         <div className="md:col-span-4 md:pl-8 animate-fade-up delay-400">
           <p className="font-sans text-base text-stone leading-relaxed max-w-sm">
-            Von skalierbaren Webanwendungen bis hin zur vollständigen Cloud-Infrastruktur — wir begleiten anspruchsvolle Unternehmen von der Idee bis zum Betrieb.
+            Ich entwickle individuelle Weblösungen mit TYPO3, Laravel und Next.js — und berate Sie in den Bereichen UI/UX und Software-Architektur.
           </p>
           <div className="mt-8 flex items-center gap-6">
             <a
@@ -57,8 +57,8 @@ export default function Hero() {
           {[
             { n: '10+', label: 'Jahre Erfahrung' },
             { n: '40+', label: 'Projekte realisiert' },
-            { n: '100%', label: 'DSGVO-konform' },
-            { n: 'DE', label: 'Infrastruktur' },
+            { n: '3', label: 'CMS & Frameworks' },
+            { n: 'DE', label: 'Standort' },
           ].map(stat => (
             <div key={stat.n}>
               <p className="font-display text-3xl text-ink">{stat.n}</p>

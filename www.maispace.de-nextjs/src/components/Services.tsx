@@ -1,27 +1,27 @@
 const services = [
   {
     index: '01',
-    title: 'Webentwicklung',
-    description: 'Performante, moderne Webanwendungen mit Next.js, React und Laravel. Vom MVP bis zur skalierbaren Plattform.',
-    tags: ['Next.js', 'React', 'Laravel', 'TypeScript'],
+    title: 'TYPO3-Entwicklung',
+    description: 'Individuelle TYPO3-Lösungen: Extensions, Templates, Migrationen und Wartung. Skalierbar, sicher und DSGVO-konform.',
+    tags: ['TYPO3', 'Fluid', 'TypoScript', 'PHP'],
   },
   {
     index: '02',
-    title: 'Cloud-Infrastruktur',
-    description: 'Aufbau und Betrieb von Server-Infrastruktur auf deutschen Servern. Docker, CI/CD, Monitoring und automatisierte Backups.',
-    tags: ['Docker', 'Hetzner', 'CI/CD', 'Monitoring'],
+    title: 'Laravel-Entwicklung',
+    description: 'Maßgeschneiderte Web-Applikationen und APIs mit Laravel — von der Konzeption bis zum produktiven Betrieb.',
+    tags: ['Laravel', 'PHP', 'REST API', 'MySQL'],
   },
   {
     index: '03',
-    title: 'Technische Beratung',
-    description: 'Architekturentscheidungen, Technologie-Evaluierung und Roadmap-Planung für Ihr digitales Produkt.',
-    tags: ['Architektur', 'Audit', 'Roadmap'],
+    title: 'Next.js & React',
+    description: 'Performante, moderne Webanwendungen und Frontends mit Next.js und React. Vom Landing-Page bis zur komplexen Plattform.',
+    tags: ['Next.js', 'React', 'TypeScript', 'Tailwind'],
   },
   {
     index: '04',
-    title: 'API & Integrationen',
-    description: 'REST- und GraphQL-APIs, Drittanbieter-Integrationen und Daten-Pipelines zwischen Ihren Systemen.',
-    tags: ['REST', 'GraphQL', 'Webhooks', 'ETL'],
+    title: 'UI/UX & Architektur-Beratung',
+    description: 'Beratung zu UI/UX-Konzepten, Software-Architektur und Technologieauswahl — damit Ihr Produkt auf einem soliden Fundament steht.',
+    tags: ['UI/UX', 'Architektur', 'Audit', 'Roadmap'],
   },
 ]
 
@@ -36,8 +36,8 @@ export default function Services() {
               Leistungen
             </p>
             <h2 className="font-display text-4xl md:text-5xl text-paper leading-tight">
-              Was wir<br />
-              <span className="italic text-stone">für Sie tun.</span>
+              Was ich<br />
+              <span className="italic text-stone">für Sie tue.</span>
             </h2>
           </div>
           <div className="hidden md:block">

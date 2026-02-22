@@ -42,7 +42,7 @@ export default function Work() {
           </div>
           <div className="md:col-span-6 flex items-end">
             <p className="font-sans text-sm text-stone leading-relaxed max-w-sm">
-              Eine Auswahl unserer Arbeiten der letzten Jahre. Auf Wunsch stellen wir Ihnen ausführliche Fallstudien zur Verfügung.
+              Eine Auswahl meiner Arbeiten der letzten Jahre. Auf Wunsch stelle ich Ihnen ausführliche Fallstudien zur Verfügung.
             </p>
           </div>
         </div>

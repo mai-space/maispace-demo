@@ -2,7 +2,7 @@ export default function About() {
   const values = [
     {
       title: 'Präzision',
-      body: 'Wir liefern sauberen, wartbaren Code und durchdachte Architektur — kein Flickwerk, keine technischen Schulden.',
+      body: 'Ich liefere sauberen, wartbaren Code und durchdachte Architektur — kein Flickwerk, keine technischen Schulden.',
     },
     {
       title: 'Transparenz',
@@ -10,7 +10,7 @@ export default function About() {
     },
     {
       title: 'Langfristigkeit',
-      body: 'Wir bauen Systeme, die in fünf Jahren noch zuverlässig laufen — und begleiten Sie dabei.',
+      body: 'Ich baue Lösungen, die in fünf Jahren noch zuverlässig laufen — und stehe Ihnen langfristig als Ansprechpartner zur Verfügung.',
     },
   ]
 
@@ -21,7 +21,7 @@ export default function About() {
           {/* Left col */}
           <div className="md:col-span-5">
             <p className="font-mono text-xs tracking-widest2 text-stone uppercase mb-4">
-              Über uns
+              Über mich
             </p>
             <h2 className="font-display text-4xl md:text-5xl text-ink leading-tight mb-8">
               Technik,<br />
@@ -29,10 +29,10 @@ export default function About() {
             </h2>
             <div className="w-12 h-px bg-mist" />
             <p className="font-sans text-base text-stone leading-relaxed mt-8">
-              Maispace ist ein technisches Beratungsunternehmen mit Sitz in Deutschland. Wir unterstützen kleine und mittelständische Unternehmen dabei, ihre digitale Infrastruktur aufzubauen, zu modernisieren und zuverlässig zu betreiben.
+              Ich bin freiberuflicher Webentwickler und technischer Berater mit Sitz in Deutschland. Mit über 10 Jahren Erfahrung unterstütze ich Unternehmen dabei, individuelle Weblösungen mit TYPO3, Laravel und Next.js zu entwickeln.
             </p>
             <p className="font-sans text-base text-stone leading-relaxed mt-4">
-              Unser Ansatz ist pragmatisch: Wir wählen die Technologie, die zu Ihrer Situation passt — nicht die, die gerade im Trend liegt.
+              Neben der Entwicklung berate ich auch in den Bereichen UI/UX und Software-Architektur. Mein Ansatz ist pragmatisch: Ich wähle die Technologie, die zu Ihrer Situation passt — nicht die, die gerade im Trend liegt.
             </p>
           </div>
 
