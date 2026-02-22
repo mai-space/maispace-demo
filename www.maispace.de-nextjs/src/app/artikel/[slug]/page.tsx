@@ -126,8 +126,7 @@ export default async function ArtikelDetailPage({ params }: Props) {
               ← Alle Artikel
             </Link>
             <a
-              href="#kontakt"
-              onClick={(e) => { e.preventDefault(); window.location.href = '/#kontakt' }}
+              href="/#kontakt"
               className="font-sans text-sm bg-ink text-paper px-5 py-2.5 hover:bg-accent transition-colors duration-200"
             >
               Kontakt →
