@@ -21,7 +21,7 @@ jobs:
         uses: gautamkrishnar/blog-post-workflow@v1
         with:
           # Your live RSS feed URL (once maispace.de is deployed)
-          feed_list: 'https://maispace.de/feed.xml'
+          feed_list: 'https://maispace-demo.vercel.app/feed.xml'
 
           # GitHub profile repo: mai-space/mai-space
           # The action will commit to that repo's README.md
