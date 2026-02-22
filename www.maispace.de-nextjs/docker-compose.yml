@@ -1,0 +1,25 @@
+version: '3.9'
+
+services:
+  maispace:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      NEXTAUTH_URL: https://maispace.de
+      NEXTAUTH_SECRET: ${NEXTAUTH_SECRET}
+      AUTHENTIK_CLIENT_ID: ${AUTHENTIK_CLIENT_ID}
+      AUTHENTIK_CLIENT_SECRET: ${AUTHENTIK_CLIENT_SECRET}
+      AUTHENTIK_ISSUER: https://auth.maispace.de/application/o/maispace-hub/
+    restart: unless-stopped
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.maispace.rule=Host(`maispace.de`) || Host(`www.maispace.de`)
+      - traefik.http.routers.maispace.tls=true
+      - traefik.http.routers.maispace.tls.certresolver=letsencrypt
+      - traefik.http.services.maispace.loadbalancer.server.port=3000
+      # Redirect www → apex
+      - traefik.http.middlewares.maispace-www.redirectregex.regex=^https://www\.maispace\.de/(.*)
+      - traefik.http.middlewares.maispace-www.redirectregex.replacement=https://maispace.de/$${1}
+      - traefik.http.middlewares.maispace-www.redirectregex.permanent=true
+      - traefik.http.routers.maispace.middlewares=maispace-www
