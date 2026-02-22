@@ -16,6 +16,7 @@ export default function Nav() {
     { href: '#leistungen', label: 'Leistungen' },
     { href: '#projekte', label: 'Projekte' },
     { href: '#ueber-uns', label: 'Über uns' },
+    { href: '/artikel', label: 'Artikel' },
     { href: '#kontakt', label: 'Kontakt' },
   ]
 
@@ -35,12 +36,21 @@ export default function Nav() {
         <ul className="hidden md:flex items-center gap-8">
           {links.map(l => (
             <li key={l.href}>
-              <a
-                href={l.href}
-                className="font-sans text-sm tracking-wide text-stone hover:text-ink transition-colors link-underline"
-              >
-                {l.label}
-              </a>
+              {l.href.startsWith('/') ? (
+                <Link
+                  href={l.href}
+                  className="font-sans text-sm tracking-wide text-stone hover:text-ink transition-colors link-underline"
+                >
+                  {l.label}
+                </Link>
+              ) : (
+                <a
+                  href={l.href}
+                  className="font-sans text-sm tracking-wide text-stone hover:text-ink transition-colors link-underline"
+                >
+                  {l.label}
+                </a>
+              )}
             </li>
           ))}
         </ul>
@@ -70,16 +80,27 @@ export default function Nav() {
       {/* Mobile menu */}
       <div className={`md:hidden transition-all duration-300 overflow-hidden ${open ? 'max-h-80' : 'max-h-0'}`}>
         <div className="bg-paper border-t border-mist px-6 py-6 flex flex-col gap-4">
-          {links.map(l => (
-            <a
-              key={l.href}
-              href={l.href}
-              className="font-sans text-base text-stone hover:text-ink transition-colors"
-              onClick={() => setOpen(false)}
-            >
-              {l.label}
-            </a>
-          ))}
+          {links.map(l =>
+            l.href.startsWith('/') ? (
+              <Link
+                key={l.href}
+                href={l.href}
+                className="font-sans text-base text-stone hover:text-ink transition-colors"
+                onClick={() => setOpen(false)}
+              >
+                {l.label}
+              </Link>
+            ) : (
+              <a
+                key={l.href}
+                href={l.href}
+                className="font-sans text-base text-stone hover:text-ink transition-colors"
+                onClick={() => setOpen(false)}
+              >
+                {l.label}
+              </a>
+            )
+          )}
           <a
             href="#kontakt"
             className="font-sans text-sm bg-ink text-paper px-4 py-2 text-center mt-2 hover:bg-accent transition-colors"

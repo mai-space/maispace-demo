@@ -1,0 +1,38 @@
+name: Update GitHub Profile README
+
+on:
+  # Run after a new deploy finishes (RSS feed is live)
+  workflow_dispatch:
+
+  # Or run on a schedule — every day at 08:00 UTC
+  schedule:
+    - cron: '0 8 * * *'
+
+  # Also trigger when a new article is pushed
+  push:
+    paths:
+      - 'www.maispace.de-nextjs/content/articles/**'
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Update GitHub profile README with latest articles
+        uses: gautamkrishnar/blog-post-workflow@v1
+        with:
+          # Your live RSS feed URL (once maispace.de is deployed)
+          feed_list: 'https://maispace.de/feed.xml'
+
+          # GitHub profile repo: mai-space/mai-space
+          # The action will commit to that repo's README.md
+          # Requires a PAT with repo scope stored as GH_TOKEN secret
+          gh_token: ${{ secrets.GH_TOKEN }}
+          readme_path: 'README.md'
+          max_post_count: 5
+          comment_tag_name: 'BLOG-POST-LIST'
+          # Format: title (date)
+          template: '$title — $date'
+          date_format: 'DD. MMMM YYYY'
+          commit_message: 'chore: update latest articles in README'
+          committer_username: 'github-actions[bot]'
+          committer_email: 'github-actions[bot]@users.noreply.github.com'
