@@ -1,7 +1,6 @@
 import { ImageResponse } from 'next/og'
 import { getAllArticles } from '@/lib/articles'
 
-export const runtime = 'edge'
 export const alt = 'Artikel — Maispace'
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'

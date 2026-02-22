@@ -7,11 +7,11 @@ import { getAllArticles } from '@/lib/articles'
 export const metadata: Metadata = {
   title: 'Artikel — Maispace',
   description: 'Praxisartikel zu TYPO3, Laravel, Next.js, UI/UX und Software-Architektur.',
-  alternates: { canonical: 'https://maispace.de/artikel' },
+  alternates: { canonical: 'https://maispace-demo.vercel.app/artikel' },
   openGraph: {
     title: 'Artikel — Maispace',
     description: 'Praxisartikel zu TYPO3, Laravel, Next.js, UI/UX und Software-Architektur.',
-    url: 'https://maispace.de/artikel',
+    url: 'https://maispace-demo.vercel.app/artikel',
   },
 }
 

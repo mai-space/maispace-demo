@@ -20,11 +20,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${meta.title} — Maispace`,
     description: meta.description,
-    alternates: { canonical: `https://maispace.de/artikel/${meta.slug}` },
+    alternates: { canonical: `https://maispace-demo.vercel.app/artikel/${meta.slug}` },
     openGraph: {
       title: meta.title,
       description: meta.description,
-      url: `https://maispace.de/artikel/${meta.slug}`,
+      url: `https://maispace-demo.vercel.app/artikel/${meta.slug}`,
       type: 'article',
       publishedTime: meta.date,
       tags: meta.tags,
@@ -54,12 +54,12 @@ export default async function ArtikelDetailPage({ params }: Props) {
     author: {
       '@type': 'Person',
       name: 'Maispace',
-      url: 'https://maispace.de',
+      url: 'https://maispace-demo.vercel.app',
     },
     publisher: {
       '@type': 'Person',
       name: 'Maispace',
-      url: 'https://maispace.de',
+      url: 'https://maispace-demo.vercel.app',
     },
   }
 
