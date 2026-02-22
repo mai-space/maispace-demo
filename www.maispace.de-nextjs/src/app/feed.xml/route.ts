@@ -1,7 +1,7 @@
 import { Feed } from 'feed'
 import { getAllArticles } from '@/lib/articles'
 
-const SITE_URL = 'https://maispace.de'
+const SITE_URL = 'https://maispace-demo.vercel.app'
 
 export async function GET() {
   const articles = getAllArticles()

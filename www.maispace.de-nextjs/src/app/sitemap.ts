@@ -1,7 +1,7 @@
 import type { MetadataRoute } from 'next'
 import { getAllArticles } from '@/lib/articles'
 
-const SITE_URL = 'https://maispace.de'
+const SITE_URL = 'https://maispace-demo.vercel.app'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const articles = getAllArticles()

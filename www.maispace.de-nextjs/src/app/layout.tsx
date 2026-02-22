@@ -23,11 +23,11 @@ const dmMono = DM_Mono({
 export const metadata: Metadata = {
   title: 'Maispace — Webentwicklung & Beratung',
   description: 'Individuelle Weblösungen mit TYPO3, Laravel und Next.js. Beratung zu UI/UX und Software-Architektur.',
-  metadataBase: new URL('https://maispace.de'),
+  metadataBase: new URL('https://maispace-demo.vercel.app'),
   openGraph: {
     title: 'Maispace — Webentwicklung & Beratung',
     description: 'Individuelle Weblösungen mit TYPO3, Laravel und Next.js. Beratung zu UI/UX und Software-Architektur.',
-    url: 'https://maispace.de',
+    url: 'https://maispace-demo.vercel.app',
     siteName: 'Maispace',
     locale: 'de_DE',
     type: 'website',
